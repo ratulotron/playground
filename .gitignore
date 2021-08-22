@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/web,code,node,elixir,phoenix
 
@@ -131,6 +132,25 @@ media
 ### Node ###
 # Logs
 logs
+=======
+# Created by https://www.gitignore.io/api/node
+
+### Node ###
+=======
+.DS_Store
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+
+# Logs
+logs
+*.log
+>>>>>>> javascript/master
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -187,6 +207,7 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
 
 ### PyCharm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
@@ -386,3 +407,63 @@ vendor/
 
 # Mac
 .DS_Store
+=======
+# Node libraries
+.next/
+
+# End of https://www.gitignore.io/api/node
+=======
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+
+# Created by https://www.gitignore.io/api/elm
+
+### Elm ###
+# elm-package generated files
+elm-stuff
+# elm-repl generated files
+repl-temp-*
+
+# End of https://www.gitignore.io/api/elm
+>>>>>>> javascript/master

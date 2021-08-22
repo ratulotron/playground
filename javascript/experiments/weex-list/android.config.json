@@ -1,0 +1,6 @@
+{
+  "AppName":"weex-list",
+  "AppId":"xyz.ratul.weex-list",
+  "SplashText":"Hello\nweex-list",
+  "WeexBundle":"app.weex.js"
+}

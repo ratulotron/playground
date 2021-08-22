@@ -1,0 +1,18 @@
+{
+  "name": "onsenui-v2-vue-navigation",
+  "version": "2.3.0+20170627.1",
+  "description": "",
+  "dependencies": {
+    "cordova-plugin-disable-ios11-statusbar": "^1.0.0",
+    "cordova-plugin-statusbar": "^2.2.3",
+    "onsenui": "2.4.x",
+    "vue": "2.3.0",
+    "vue-onsenui": "2.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-disable-ios11-statusbar": {}
+    }
+  }
+}
