@@ -360,3 +360,29 @@ ENV/
 *.xhtml
 
 # End of https://www.gitignore.io/api/web,node,django,python,pycharm
+
+# Created by https://www.gitignore.io/api/go,code,intellij+all
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+tsconfig.json
+jsconfig.json
+
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+vendor/
+
+# Test binary, build with `go test -c`
+*.test
+
+# Intellij Idea/ Gogland
+.idea/
+
+# Mac
+.DS_Store
