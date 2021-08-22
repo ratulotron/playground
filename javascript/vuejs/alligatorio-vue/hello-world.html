@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!-- First we have a basic HTML boilerplate file. -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello world in Vue.js</title>
+</head>
+
+<body>
+  <!-- A div with an id of #hello-world-app will contain our app. -->
+  <div id="hello-world-app">
+    <!-- In the div, we have an h1 and a reference to an msg piece of data. -->
+    <h1>{{ msg }}</h1>
+
+    <div v-if="isLoggedIn">
+      <label for="logout">Logout</label>
+      <button name="logout" @click="logout">Logout</button>
+    </div>
+    <div v-else-if="isLoginDisabled">
+      <label for="disabled">Register disabled</label>
+      <button name="disabled">Register disabled</button>
+    </div>
+    <div v-else>
+      <label for="login">Login</label>
+      <button name="login" @click="login">Login</button>
+    </div>
+
+    <div v-show="isLoggedIn">
+      <p>You are logged in!</p>
+    </div>
+
+    <ul>
+      <li v-for="msg in messages">{{ msg }}</li>
+    </ul>
+
+    <ul>
+      <li v-for="item in shoppingItems">
+        {{ item.name }} - {{ item.price }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- We call for the minified Vue.js library -->
+  <script src="../libs/vue.min.js"></script>
+  <script>
+    // We then instantiate a new Vue object and tell it with el that our app is
+    // the #hello-world-app div.
+    new Vue({
+      el: '#hello-world-app',
+      // Finally, we provide the data needed with the data object. In this case, we
+      // provide the data for msg.
+      data() {
+        return {
+          msg: "Hello World!",
+          messages: ['hello', 'vue', 'js'],
+          shoppingItems: [
+            { name: 'apple', price: '10' },
+            { name: 'orange', price: '12' }
+          ],
+
+          // Status
+          isLoggedIn: false,
+          isLoginDisabled: false
+        }
+      },
+      methods: {
+        login() {
+          this.isLoggedIn = true;
+          console.log(this.isLoggedIn);
+        },
+        logout() {
+          this.isLoggedIn = false;
+          console.log(this.isLoggedIn);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

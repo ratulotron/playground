@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Tutorial</title>
+    <script src="./js/vue.js"></script>
+    <script src="./js/vue-resource.js"></script>
+</head>
+
+<body>
+    <dir id="app">
+        <input type="text" v-model="message">
+        <br /> {{message}}
+        <h2>Todos</h2>
+        <div>
+            <input v-model="newTodo" type="text" placeholder="Add Task">
+            <button v-on:click="addTask()">Add Task</button>
+           <div v-for="todo in todos">
+               <p>{{todo.title}}</p>
+               <!--<h2>{{band.origin}}</h3>-->
+            </div> 
+        </div>
+
+    </dir>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                todos: {},
+                newTodo: "",
+                message: 'Hello Vue.js!',
+                bands: [
+                    { name: "Bayside", origin: "Queens, New York"},
+                    { name: "Adele", origin: "London, United Kingdom"},
+                    { name: "Silverstein", origin: "Toronto, Canada"}
+                ]
+            },
+            created() {
+                // GET /someUrl
+                this.$http.get('http://jsonplaceholder.typicode.com/todos').then(response => {
+                    // success callback
+                    console.log(response.data)
+                    this.todos = response.data
+                }, response => {
+                    // error callback
+                });
+            },
+            methods: {
+                addTask() {
+                    this.todos.push({
+                        userId: 1,
+                        id: 1,
+                        title: this.newTodo,
+                        completed: false
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
