@@ -7,11 +7,11 @@
 ; Returns: nil
 
 (defn n-times-hello-world [n]
-    (loop [i n]
-        (if (> i 0)
-            (do
-                (println "Hello World")
-                (recur (dec i))))))
+  (loop [i n]
+    (if (> i 0)
+      (do
+        (println "Hello World")
+        (recur (dec i))))))
 
 
 (n-times-hello-world 3)
