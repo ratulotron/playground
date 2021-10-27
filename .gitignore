@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,node,csharp,dart,django,elixir,codeblocks,visualstudiocode,visualstudio,pycharm+all,phpstorm+all,rider,go,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,node,csharp,dart,django,elixir,codeblocks,visualstudiocode,visualstudio,pycharm+all,phpstorm+all,rider,go,macos
+# Created by https://www.toptal.com/developers/gitignore/api/go,node,dart,macos,rider,elixir,python,django,csharp,codeblocks,pycharm+all,phpstorm+all,visualstudio,visualstudiocode,java,maven,gradle
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,node,dart,macos,rider,elixir,python,django,csharp,codeblocks,pycharm+all,phpstorm+all,visualstudio,visualstudiocode,java,maven,gradle
 
 ### CodeBlocks ###
 # specific to CodeBlocks IDE
@@ -429,6 +429,10 @@ doc/api/
 .flutter-plugins
 .flutter-plugins-dependencies
 
+### Dart Patch ###
+# dotenv environment variables file
+.env
+
 ### Django ###
 *.pot
 local_settings.py
@@ -541,7 +545,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -607,6 +610,30 @@ erl_crash.dump
 /vendor/
 /Godeps/
 
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
 ### macOS ###
 # General
 .DS_Store
@@ -635,6 +662,25 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### Maven ###
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+### Maven Patch ###
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
 ### Node ###
 # Logs
@@ -751,6 +797,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
 
 ### PhpStorm+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -1020,6 +1070,28 @@ modules.xml
 .history
 .ionide
 
+### Gradle ###
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+# JDT-specific (Eclipse Java Development Tools)
+
 ### VisualStudio ###
 
 # User-specific files
@@ -1195,4 +1267,4 @@ modules.xml
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/python,node,csharp,dart,django,elixir,codeblocks,visualstudiocode,visualstudio,pycharm+all,phpstorm+all,rider,go,macos
+# End of https://www.toptal.com/developers/gitignore/api/go,node,dart,macos,rider,elixir,python,django,csharp,codeblocks,pycharm+all,phpstorm+all,visualstudio,visualstudiocode,java,maven,gradle
