@@ -1,0 +1,1 @@
+dgraph zero --my=HOSTIPADDR:5080

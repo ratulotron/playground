@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  zero:
+    image: dgraph/dgraph:v21.12.0
+    restart: always
+    # environment:
+    ports:
+      - "5080:5080"
+    volumes:
+      - zero:/dgraph
+volumes:
+  dgraph:
+    driver: local

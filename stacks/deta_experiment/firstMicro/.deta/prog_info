@@ -1,0 +1,1 @@
+{"id":"a7f14fd9-520c-485a-a3f9-dffc84f03e5f","space":4273,"runtime":"python3.7","name":"firstMicro","path":"s45hxj","project":"a0v328yz","account":"144798365827","region":"eu-central-1","deps":["pandas","fastapi"],"envs":null,"public":true,"log_level":"debug","cron":""}
