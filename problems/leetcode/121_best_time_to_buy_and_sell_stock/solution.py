@@ -1,5 +1,5 @@
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices: list[int]) -> int:
         current_max = prices[0]
         current_max_date = 0
         current_min = prices[0]
