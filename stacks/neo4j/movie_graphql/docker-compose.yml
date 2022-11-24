@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  web:
+    container_name: web
+    image: moviegraphql
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: "npm start"
+    environment:
+      NODE_ENV: dev
+      NEO4j_URI: bolt://db:7687
+      GRAPHQL_PORT: 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/usr/src/app
+    depends_on:
+      - db
+
+  db:
+    container_name: db
+    image: neo4j:latest
+    ports:
+      - 7474:7474
+      - 7687:7687
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - data:/data
+
+volumes:
+  data:

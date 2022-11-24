@@ -1,9 +1,0 @@
-{
-    "AppName": "weex-list",
-    "AppId": "xyz.ratul.weex-list",
-    "Version": "0.1",
-    "BuildVersion": "0.1.0",
-    "CodeSign": "123",
-    "Profile": "123",
-    "WeexBundle": "app.weex.js"
-}
